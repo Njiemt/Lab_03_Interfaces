@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
-public class ShortWordFilter {
+public class ShortWordFilter implements Filter {
+    public boolean accept(Object x){
+        String word = (String) x;
+        return word.length() <= 5 ;
+    }
 }
